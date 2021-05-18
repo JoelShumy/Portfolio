@@ -1,0 +1,168 @@
+#career {
+    display: flex;
+    justify-content: center;
+    background-image: url('../contenu/BG/bg_papier.jpg');
+    background-repeat: repeat;
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.25);
+    width: 100%;
+    z-index: 1;
+}
+
+#pixel_anchor_career {
+    position: relative;
+    width: 1px;
+    height: 1px;
+}
+
+
+#career_content {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#career_content h3 {
+    color: $colorThree;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    width: 100%;
+}
+
+#career_logo {
+  width : 59%;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+
+#career_pitch {
+  width: 40%; 
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#career_pitch span {
+    color: $colorTwo;
+    font-weight:bolder ;
+}
+
+#career_pitch strong {
+    font-weight:bolder ;
+}
+
+#logo_study {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid $colorThree;
+    margin-top: 50px;
+}
+
+#logo_open_class_room {
+  margin-top: 40px;
+}
+
+#logo_IIM::before {
+  content:url("../contenu/logos/logo_IIM.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_IIM:hover::before {
+  opacity: 1;
+}
+
+#logo_open_class_room::before {
+  content:url("../contenu/logos/logo_openclassroom.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_open_class_room:hover::before {
+  opacity: 1;
+}
+
+
+#logo_brands {
+  width: 100%;
+  height: 350px;
+  margin-left: 50px;
+  margin-top: 50px;
+
+}
+
+#square_logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+#logo_jvc::before {
+  content:url("../contenu/logos/logo_JVC.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_jvc:hover::before {
+  opacity: 1;
+}
+
+#logo_millenium::before {
+  content:url("../contenu/logos/logo_millenium.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_millenium:hover::before {
+  opacity: 1;
+}
+
+#logo_coca::before {
+  content:url("../contenu/logos/logo_Coca.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_coca:hover::before {
+  opacity: 1;
+}
+
+#logo_melty::before {
+  content:url("../contenu/logos/logo_melty.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_melty:hover::before {
+  opacity: 1;
+}
+
+#logo_one_hour::before {
+  content:url("../contenu/logos/logo_1H.png");
+  opacity: 0;
+  transition: opacity 300ms;
+  position: absolute;
+}
+
+#logo_one_hour:hover::before {
+  opacity: 1;
+}
+
+#pixel_anchor_projects {
+  width: 1px;
+  height: 1px;
+}

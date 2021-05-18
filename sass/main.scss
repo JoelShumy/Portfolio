@@ -1,0 +1,526 @@
+@import "./utils/variables";
+@import "./Base/base";
+@import "./Base/typographie";
+@import "./Components/btn";
+@import "./Components/menuBurger";
+@import "./Layout/header";
+@import "./Layout/footer";
+@import "./Pages/intro";
+@import "./Pages/skills";
+@import "./Pages/career";
+@import "./Pages/projects";
+@import "./Pages/contact";
+
+ /* ------------------------------- SKILLS */ 
+* {
+    margin: none;
+    padding: none;
+}
+  
+
+  .content_center {
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+
+  /* ------------------------------- CAREER */ 
+ 
+
+   /* ------------------------------- PROJECTS */ 
+
+
+
+
+
+
+
+     /* ------------------------------------------------------------------------------------------------------ RESPONSIVE */ 
+
+
+@media all and (max-width: 1300px) /*--------------------------------------- Règles CSS pour les mobiles ici */
+{
+
+    body {
+        width: 100%;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    #header_content {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #logo_header {
+        margin-left:0px;
+    }
+
+    .content_center {
+        width: 700px;
+        margin: auto;
+        height: 100%;
+    }
+
+    #skill_boxes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 300px;
+    }
+
+    .box {
+        margin-bottom: 15px;
+    }
+
+    #career {
+        height: auto;
+    }
+
+    #career_logo {
+        width: 100%;
+    }
+
+    #career h3 {
+        margin-top: 450px;
+        margin-bottom: 40px;
+    }
+    
+    #career_content {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #career_pitch {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 1.3rem;
+    }
+    
+    #projects {
+        height: 1100px;
+        width: 100%;
+    }
+
+    #projects h3 {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    #project_boxes {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #contact {
+        height: 760px;
+        background-image: url("../contenu/BG/cdv3.png");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 20%;
+        background-attachment: local, scroll;
+    }
+
+    #contact h3 {
+        margin-left: 0;
+    }
+
+    #contact_buttons {
+        margin-top: 110px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #cv, #linkedin {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    #cv {
+        width: 400px;
+    }
+
+    #linkedin {
+        margin-left: 0px;
+    }
+
+    #go_up_feature {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        }
+
+
+}
+
+@media all and (max-width: 768px) /*--------------------------------------- Règles CSS pour les mobiles ici */
+{
+
+    body {
+        width: auto;
+        margin: auto;
+    }
+
+
+    #nav_header ul {
+        width: 100%;
+    }
+
+    #header_content {
+        justify-content: flex-start;
+    }
+
+    #logo_header {
+        margin: 0px;
+    }
+
+    h3, #projects h3, #skills h3, #contact h3 {
+        margin: 0 5%;
+        font-size: 4rem;
+        width: 90%;
+    }
+
+    #career h3 {
+        width: 90%;
+    }
+    
+    #projects h3, #contact h3{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 5%;
+    }
+
+    #skill_center, #contact_center, #project_center, #career_center {
+        width: 100%;
+    }
+
+    #intro {
+        padding-left: 15px;
+        width: 90%;
+    }
+
+    #skill_head {
+        width: 100%;
+    }
+
+    .content_center {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+    }
+
+    #career {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+
+    #career_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    #career_pitch {
+        width: 90%;
+    }
+
+    #career_logo {
+        width: 90%;
+    }
+
+
+    #logo_brands {
+        width: 50%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px; 
+        padding-right: 25px;
+    }
+
+    #square_logo {
+        width: 300px;
+        height: 280px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo_study {
+        align-items: center;
+        width: 48%;
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    #project_center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project_boxes {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .project_box {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #contact_info, #contact_buttons {
+        width: 90%;
+    }
+
+    #contact {
+        background-position-y: 450px;
+        background-position-x: 0px;
+    }
+}
+
+@media all and (max-device-width: 559px) /*--------------------------------------- Règles CSS pour les mobiles ici */
+{
+
+
+    body {
+        width:auto;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    header {
+        min-width: 300px;
+    }
+
+    h3, #projects h3, #skills h3, #contact h3, #career h3 {
+        font-size: 2.5em;
+    }
+
+
+    #skill_boxes {
+        width: 100%;
+    }
+
+    #skill_head {
+        align-items: center;
+        margin-top: -140px;
+    }
+
+    .box {
+        margin-bottom: 15px;
+    }
+
+
+    #career {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #career h3 {
+        margin-top: 1250px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    #career_content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #career_pitch p{
+        font-size: 1em;
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    #career_pitch {
+        margin-bottom: 0;
+        height: auto;
+        width: 90%;
+    }
+
+    #career_logo {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        height: auto;
+        width: 90%;
+    }
+
+    #logo_study {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        border: none;      
+    }
+
+    #square_logo {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;  
+    }
+
+    #square_logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #logo_IIM, #logo_open_class_room {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+
+    }
+
+    #logo_IIM img, #logo_open_class_room img {
+        width: 100%;
+    }
+
+    #logo_IIM::before, #logo_open_class_room::before {
+        display: none;
+    }
+
+    #logo_brands {
+        width: 100%;
+        min-width: 280px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding : 0;
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+    #logo_jvc {
+        border-top: gray 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    #logo_jvc img {
+        width: 100%;
+    }
+
+    #contact_info h4 {
+        width: 100%;
+    }
+    
+    #mail, #cv {
+        width: 90%;
+    }
+
+    #mail p, #cv p {
+        font-size: 4.3vw;
+
+    }
+     /*--------------------------------------- Animation burger menu - START*/
+     header {
+        width: 100%;
+        height: 90px;
+    }
+
+    .img_logo {
+        margin-left: 5%;
+    }
+
+     #nav_header {
+        display: none;
+    }
+
+     #bouton_menu_burger {
+        display:block;
+    }
+    
+.burger_menu_background {
+    animation: pop 300ms ease-in-out;
+}
+
+    @keyframes pop {
+     from {
+        transform-origin: top;
+        transform: scaleY(0);    
+     }
+
+     to {
+        transform-origin: top;
+        transform: scaleY(1);
+     }
+    }
+
+
+.burger_menu_buttons {
+    opacity: 0;
+    animation: bouttons_pop 400ms ease-in-out 100ms forwards;
+}
+
+    @keyframes bouttons_pop {
+        from {
+            opacity: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+        }
+
+        to {
+            opacity: 1;
+            transform-origin: right;
+            transform: scaleX(1);
+        }
+    }
+
+#skill_burger_menu {
+    animation: bouttons_pop 400ms ease-in 150ms;
+    }
+
+#career_burger_menu {
+    animation: bouttons_pop 400ms ease-in 200ms;
+    }
+
+#project_burger_menu {
+    animation: bouttons_pop 400ms ease-in 250ms;
+    }
+
+#contact_burger_menu {
+    animation: bouttons_pop 400ms ease-in 300ms;
+    }
+}
+
+
+    

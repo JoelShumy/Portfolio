@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'AlegreyaSans-Regular';
+	src: url('font/AlegreyaSans-Regular.otf');
+	font-family: 'Asap-Regular';
+	src: url('font/Asap-Regular.otf');
+}
+
+.h1_index .h2_index{
+    margin: 0;
+}
+
+.h2_index {
+    color:$colorThree;
+}
+
+.h3_index {
+    font-family:'Asap-Regular', Arial, Helvetica, sans-serif ;
+    font-size: 4.5em;
+    font-weight: bolder;
+    margin-left: 0;
+    width: 100%;
+}
+
+.h4_index {
+    color: white;
+    width: 130px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* ---------------------------------- Page REM */
+
+
+.h2_room_escape_maker {
+    font-size: 4rem;
+    margin: 25px 0px;
+}
+
+.h4_room_escape_maker {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+#interface h2 {
+    width: 100%;
+}
+
+a:visited {
+    display: none;
+}
+
+a {
+    color: $colorTwo;
+}

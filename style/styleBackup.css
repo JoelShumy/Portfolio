@@ -1,0 +1,1340 @@
+@font-face {
+	font-family: 'AlegreyaSans-Regular';
+	src: url('font/AlegreyaSans-Regular.otf');
+	font-family: 'Asap-Regular';
+	src: url('font/Asap-Regular.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Asap-Regular', Arial, Helvetica, sans-serif ;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #172534;
+    height: 150px;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+}
+
+#header_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#logo_header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_logo {
+    height: 90px;
+    width: 140px;
+    margin-left: 70px;
+}
+
+#nav_header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-image: url("../contenu/BG/bg_jsk_tape.png");
+    background-repeat: repeat;
+    width: 100%;
+    box-shadow: 0px 3px 9px 2px rgba(0,0,0,0.18);
+
+}
+
+#nav_header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: #AEAEAE;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_header li {
+    width: 180px;
+    height: 100%;
+    border-left: 1px solid #AEAEAE;
+    font-family: 'Asap-Regular';
+    font-size: 1.2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill_button {
+    border-left: solid 1px #AEAEAE;
+    display: flex;
+    justify-content: center;
+}
+
+
+#skill_button a{
+    opacity: 0;
+    color:#1bbc9b;
+    text-align: center;
+    transition: opacity 300ms;
+    position: absolute;
+  }
+
+#skill_button a:hover {
+    opacity: 1;
+  }
+
+#career_button {
+    border-left: solid 1px #AEAEAE;
+    display: flex;
+    justify-content: center;
+}
+
+
+#career_button a{
+    opacity: 0;
+    color:#1bbc9b;
+    text-align: center;
+    transition: opacity 300ms;
+    position: absolute;
+  }
+
+  #career_button a:hover {
+    opacity: 1;
+  }
+
+  #projects_button {
+    border-left: solid 1px #AEAEAE;
+    display: flex;
+    justify-content: center;
+}
+
+
+#projects_button a{
+    opacity: 0;
+    color:#1bbc9b;
+    text-align: center;
+    transition: opacity 300ms;
+    position: absolute;
+  }
+
+#projects_button a:hover {
+    opacity: 1;
+  }
+
+#contact_button {
+    border-left: solid 1px #AEAEAE;
+    border-right: solid 1px #AEAEAE;
+    display: flex;
+    justify-content: center;
+}
+
+
+#contact_button a{
+    opacity: 0;
+    color:#1bbc9b;
+    text-align: center;
+    transition: opacity 300ms;
+    position: absolute;
+  }
+
+  #contact_button a:hover {
+    opacity: 1;
+  }
+
+li a {
+    color: #AEAEAE;
+    text-decoration: none;
+}
+
+ /* ------------------------------- MENU BURGER */ 
+
+.close_button {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    left: 80%;
+    
+}
+
+.close {
+    z-index: 5;
+    opacity: 1;
+}
+
+.open_button {
+    height: 45px;
+    width: 45px;
+    margin-right: 75px;
+    opacity: 1;
+    
+}
+
+#bouton_menu_burger {
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+ .burger_menu {
+    width: 100%;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    position: fixed;
+    z-index: 6;
+ }
+
+ .active {
+     display: block;
+ }
+
+ .inactive {
+     display: none;
+ }
+
+ .burger_menu_background {
+     width: 100%;
+     min-width: 300px;
+     height: 100%;
+     background-color: #172534;
+     position: absolute;
+     position: fixed;
+     top: 84px;
+     z-index: 3;
+     opacity: 0.7;
+ }
+
+ .burger_menu_buttons {
+     height: 480px;
+     width: 95%;
+     background-color: white;
+     opacity: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     position: absolute;
+     position: fixed;
+     left: 5%;
+     top: 91px;
+     margin: 0;
+     padding: 0;
+     z-index: 4;
+     
+ }
+
+ .burger_button {
+     width: 97%;
+     display: flex;
+     align-items: center;
+     height: 120px;
+     font-size: 1.9rem;
+ }
+
+ .burger_button a {
+     text-decoration: none;
+ }
+
+ .burger_button p {
+     margin-left: 7%;
+ }
+
+ .burger_button img{
+    margin-left: 5%;
+ }
+
+ #skill_burger_menu {
+     background-color: #2d3e50;
+     
+ }
+
+ #skill_burger_menu p {
+    color: white;
+ }
+
+ #career_burger_menu {
+    background-color: #e64c66;
+ }
+
+ #career_burger_menu p {
+    color: white;
+ }
+
+ #project_burger_menu {
+    background-color: #1bbc9b;
+ }
+
+ #project_burger_menu p {
+    color: white;
+ }
+
+ #contact_burger_menu {
+    background-color: #AEAEAE;
+ }
+
+ #contact_burger_menu p {
+    color: white;
+ }
+
+ /* ------------------------------- INTRO */ 
+
+#intro {
+    height: 320px;
+    width: 100%;
+    margin: 0;
+}
+
+#logo_intro {
+    margin-top: 110px;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+h2 {
+    color:#AEAEAE;
+}
+
+h3 {
+    font-family:'Asap-Regular', Arial, Helvetica, sans-serif ;
+    font-size: 4.5em;
+    font-weight: bolder;
+    margin-left: 0;
+    width: 100%;
+}
+
+ /* ------------------------------- SKILLS */ 
+
+  #skills {
+    padding-top: 140px;
+    height: 640px;
+    background-image: url('../contenu/BG/fond_entete.jpg') ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .content_center {
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+
+  #skill_center {
+      height: 640px;
+  }
+
+  #skill_head {
+    height: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -140px;
+    }
+
+    #skill_center h3 {
+    color: #172534;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+
+    }
+
+  #skill_boxes {
+      width: 100%;
+      height: 360px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 150px;
+  }
+
+  .box {
+      height: 360px;
+      width: 270px;
+      margin-right: 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      box-shadow: 8px 5px 15px 0px #7A7A7A;
+
+  }
+
+  #last_box {
+      margin-right: 0;
+  }
+
+  .box_title {
+      width: 100%;
+      height: 140px;
+      border-radius: 10px 10px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .box_bottom {
+    height: 220px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    box-shadow: 8px 5px 15px 0px #7A7A7A;
+  }
+
+  #box_bottom_contenu {
+      margin-right: 0;
+  }
+
+  .box_bottom li {
+      margin-top: 5px;
+  }
+
+
+  #creation_contenu {
+    margin-right: 0;
+    background-color: #AEAEAE;
+    color: white;
+  }
+
+  #developpement_web {
+      background-color:#172534;
+  }
+
+  #community_management {
+    background-color: #1bbc9b;
+  }
+
+  #game_design {
+    background-color: #e64646
+  }
+
+  #game_design h4 {
+    width: 100px;
+  }
+  
+  .box img {
+        margin-top: 10px;
+    }
+
+  h4 {
+      color: white;
+      width: 130px;
+      text-align: center;
+      margin: 0;
+      margin-top: 10px;
+      font-size: 1.2em;
+  }
+
+
+
+  /* ------------------------------- CAREER */ 
+  #career {
+      display: flex;
+      justify-content: center;
+      background-image: url('../contenu/BG/bg_papier.jpg');
+      background-repeat: repeat;
+      box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.25);
+      width: 100%;
+      z-index: 1;
+  }
+
+  #pixel_anchor_career {
+      position: relative;
+      width: 1px;
+      height: 1px;
+  }
+
+
+  #career_content {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  #career_content h3 {
+      color: #AEAEAE;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 50px;
+      margin-top: 75px;
+      width: 100%;
+  }
+
+  #career_logo {
+    width : 59%;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+
+  #career_pitch {
+    width: 40%; 
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #career_pitch span {
+      color: #1bbc9b;
+      font-weight:bolder ;
+  }
+
+  #career_pitch strong {
+      font-weight:bolder ;
+  }
+
+  #logo_study {
+      height: 350px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid #AEAEAE;
+      margin-top: 50px;
+  }
+
+#logo_open_class_room {
+    margin-top: 40px;
+}
+
+#logo_IIM::before {
+    content:url("../contenu/logos/logo_IIM.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_IIM:hover::before {
+    opacity: 1;
+}
+
+#logo_open_class_room::before {
+    content:url("../contenu/logos/logo_openclassroom.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_open_class_room:hover::before {
+    opacity: 1;
+}
+
+
+#logo_brands {
+    width: 100%;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+  #square_logo {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+}
+
+#logo_jvc::before {
+    content:url("../contenu/logos/logo_JVC.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_jvc:hover::before {
+    opacity: 1;
+}
+
+#logo_millenium::before {
+    content:url("../contenu/logos/logo_millenium.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_millenium:hover::before {
+    opacity: 1;
+}
+
+#logo_coca::before {
+    content:url("../contenu/logos/logo_Coca.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_coca:hover::before {
+    opacity: 1;
+}
+
+#logo_melty::before {
+    content:url("../contenu/logos/logo_melty.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_melty:hover::before {
+    opacity: 1;
+}
+
+#logo_one_hour::before {
+    content:url("../contenu/logos/logo_1H.png");
+    opacity: 0;
+    transition: opacity 300ms;
+    position: absolute;
+}
+
+#logo_one_hour:hover::before {
+    opacity: 1;
+}
+
+#pixel_anchor_projects {
+    width: 1px;
+    height: 1px;
+}
+
+   /* ------------------------------- PROJECTS */ 
+
+#projects {
+    height: 680px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    background-image: url("../contenu/BG/fond_projets.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project_center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#projects h3 {
+    color: #172534;
+    text-align: left;
+    margin-left: 0;
+   }
+
+#project_boxes a{
+    text-decoration: none;
+}
+
+
+#project_boxes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+
+.project_box {
+    width: 260px;
+    height: 370px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 300ms;
+   }
+
+.project_box:hover {
+    transform : translateY(-20px)
+   }
+
+#optagony {
+    background-image: url("../contenu/projets/projet_optagony.png");
+    background-size: cover;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
+   }
+
+#room_escape_maker {
+    background-image: url("../contenu/projets/projet_room-escape.png");
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
+   }
+
+#game_mastering {
+    background-image: url("../contenu/projets/projet_GM_projet_GM.png");
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
+   }
+
+#project_last_box {
+    margin-right: 0;
+   }
+
+
+
+.title {
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   }
+
+.title h4 {      
+    color: black;
+    width: 270px;
+
+   }
+
+    /* ------------------------------- CONTACT */ 
+
+#contact {
+    height: auto;
+    background-color: white;
+    background-image: url("../contenu/BG/cdv3.png");
+    background-repeat: no-repeat;
+    background-position-x: 66%;
+    background-position-y: top;
+    background-attachment: local;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+
+#contact_info{
+        height: 345px;
+        width: 100%;
+    }
+
+#contact_center h3 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #172534;
+    }
+
+#contact_info h4 {
+    color: black;
+    text-align: left;
+    width: 300px;
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: initial ;
+    }
+
+#contact_buttons {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+#go_up_feature {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    bottom: 20px;
+    }
+
+#mail {
+    width: 400px;
+    min-width: 250px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #1bbc9b;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.24);
+    }
+
+    #mail a, #cv a {
+        display: flex;
+        width: 100%;
+    }
+    
+#mail img, #cv img {
+    position: relative;
+    bottom: 10px;
+    }
+
+#mail p, #cv p {
+    margin: auto;
+    text-align: left;
+}
+
+#cv {
+    width: 300px;
+    height: 65px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.24);
+}
+
+#contact p {
+    font-size: 1.3rem;
+    }
+
+#contact a{
+    text-decoration: none;
+    color : black;
+    }
+
+#linkedin {
+    margin-left: 10%;
+    }
+
+#up_button {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.3);
+    }
+
+    /* ------------------------------- FOOTER */ 
+
+    footer {
+        height: 80px;
+        width: 100%;
+    }
+
+    #top_footer {
+        height: 60px;
+        background-color: #172534;
+        display: flex;
+        justify-content: center;
+    }
+
+    #top_footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #bottom_footer {
+        height: 20px;
+        background-color: #1bbc9b;
+    }
+
+
+
+
+     /* ------------------------------------------------------------------------------------------------------ RESPONSIVE */ 
+
+
+@media all and (max-width: 1300px) /*--------------------------------------- Règles CSS pour les mobiles ici */
+{
+
+    body {
+        width: 100%;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    #header_content {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #logo_header {
+        margin-left:0px;
+    }
+
+    .content_center {
+        width: 700px;
+        margin: auto;
+        height: 100%;
+    }
+
+    #skill_boxes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 300px;
+    }
+
+    .box {
+        margin-bottom: 15px;
+    }
+
+    #career {
+        height: auto;
+    }
+
+    #career_logo {
+        width: 100%;
+    }
+
+    #career h3 {
+        margin-top: 450px;
+        margin-bottom: 40px;
+    }
+    
+    #career_content {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #career_pitch {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 1.3rem;
+    }
+    
+    #projects {
+        height: 1100px;
+        width: 100%;
+    }
+
+    #projects h3 {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    #project_boxes {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #contact {
+        height: 760px;
+        background-image: url("../contenu/BG/cdv3.png");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 20%;
+        background-attachment: local, scroll;
+    }
+
+    #contact h3 {
+        margin-left: 0;
+    }
+
+    #contact_buttons {
+        margin-top: 110px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #cv, #linkedin {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    #cv {
+        width: 400px;
+    }
+
+    #linkedin {
+        margin-left: 0px;
+    }
+
+    #go_up_feature {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        }
+
+
+}
+
+@media all and (max-width: 768px) /*--------------------------------------- Règles CSS pour les mobiles ici */
+{
+
+    body {
+        width: auto;
+        margin: auto;
+    }
+
+
+    #nav_header ul {
+        width: 100%;
+    }
+
+    #header_content {
+        justify-content: flex-start;
+    }
+
+    #logo_header {
+        margin: 0px;
+    }
+
+    h3, #projects h3, #skills h3, #contact h3 {
+        margin: 0 5%;
+        font-size: 4rem;
+        width: 90%;
+    }
+
+    #career h3 {
+        width: 90%;
+    }
+    
+    #projects h3, #contact h3{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 5%;
+    }
+
+    #skill_center, #contact_center, #project_center, #career_center {
+        width: 100%;
+    }
+
+    #intro {
+        padding-left: 15px;
+        width: 90%;
+    }
+
+    #skill_head {
+        width: 100%;
+    }
+
+    .content_center {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+    }
+
+    #career {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+
+    #career_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    #career_pitch {
+        width: 90%;
+    }
+
+    #career_logo {
+        width: 90%;
+    }
+
+
+    #logo_brands {
+        width: 50%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px; 
+        padding-right: 25px;
+    }
+
+    #square_logo {
+        width: 300px;
+        height: 280px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo_study {
+        align-items: center;
+        width: 48%;
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    #project_center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project_boxes {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .project_box {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #contact_info, #contact_buttons {
+        width: 90%;
+    }
+
+    #contact {
+        background-position-y: 450px;
+        background-position-x: 0px;
+    }
+}
+
+@media all and (max-device-width: 559px) /*--------------------------------------- Règles CSS pour les mobiles ici */
+{
+
+
+    body {
+        width:auto;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    header {
+        min-width: 300px;
+    }
+
+    h3, #projects h3, #skills h3, #contact h3, #career h3 {
+        font-size: 2.5em;
+    }
+
+
+    #skill_boxes {
+        width: 100%;
+    }
+
+    #skill_head {
+        align-items: center;
+        margin-top: -140px;
+    }
+
+    .box {
+        margin-bottom: 15px;
+    }
+
+
+    #career {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #career h3 {
+        margin-top: 1250px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    #career_content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #career_pitch p{
+        font-size: 1em;
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    #career_pitch {
+        margin-bottom: 0;
+        height: auto;
+        width: 90%;
+    }
+
+    #career_logo {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        height: auto;
+        width: 90%;
+    }
+
+    #logo_study {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        border: none;      
+    }
+
+    #square_logo {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;  
+    }
+
+    #square_logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #logo_IIM, #logo_open_class_room {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+
+    }
+
+    #logo_IIM img, #logo_open_class_room img {
+        width: 100%;
+    }
+
+    #logo_IIM::before, #logo_open_class_room::before {
+        display: none;
+    }
+
+    #logo_brands {
+        width: 100%;
+        min-width: 280px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding : 0;
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+    #logo_jvc {
+        border-top: gray 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    #logo_jvc img {
+        width: 100%;
+    }
+
+    #contact_info h4 {
+        width: 100%;
+    }
+    
+    #mail, #cv {
+        width: 90%;
+    }
+
+    #mail p, #cv p {
+        font-size: 4.3vw;
+
+    }
+     /*--------------------------------------- Animation burger menu - START*/
+     header {
+        width: 100%;
+        height: 90px;
+    }
+
+    .img_logo {
+        margin-left: 5%;
+    }
+
+     #nav_header {
+        display: none;
+    }
+
+     #bouton_menu_burger {
+        display:block;
+    }
+    
+.burger_menu_background {
+    animation: pop 300ms ease-in-out;
+}
+
+    @keyframes pop {
+     from {
+        transform-origin: top;
+        transform: scaleY(0);    
+     }
+
+     to {
+        transform-origin: top;
+        transform: scaleY(1);
+     }
+    }
+
+
+.burger_menu_buttons {
+    opacity: 0;
+    animation: bouttons_pop 400ms ease-in-out 100ms forwards;
+}
+
+    @keyframes bouttons_pop {
+        from {
+            opacity: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+        }
+
+        to {
+            opacity: 1;
+            transform-origin: right;
+            transform: scaleX(1);
+        }
+    }
+
+#skill_burger_menu {
+    animation: bouttons_pop 400ms ease-in 150ms;
+    }
+
+#career_burger_menu {
+    animation: bouttons_pop 400ms ease-in 200ms;
+    }
+
+#project_burger_menu {
+    animation: bouttons_pop 400ms ease-in 250ms;
+    }
+
+#contact_burger_menu {
+    animation: bouttons_pop 400ms ease-in 300ms;
+    }
+}
+
+
+    

@@ -1,0 +1,40 @@
+    /* ------------------------------- CONTACT */ 
+
+    #contact {
+        height: auto;
+        background-color: white;
+        background-image: url("../contenu/BG/cdv3.png");
+        background-repeat: no-repeat;
+        background-position-x: 66%;
+        background-position-y: top;
+        background-attachment: local;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        }
+    
+    #contact_info{
+            height: 345px;
+            width: 100%;
+        }
+    
+    #contact_center h3 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        text-align: left;
+        color: $colorOne;
+        }
+    
+    #contact_info h4 {
+        color: black;
+        text-align: left;
+        width: 300px;
+        margin-top: 5px;
+        font-size: 1.2em;
+        font-weight: initial ;
+        }
+
+    
+
+    

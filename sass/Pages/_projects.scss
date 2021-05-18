@@ -1,0 +1,89 @@
+#projects {
+    height: 680px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    background-image: url("../contenu/BG/fond_projets.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project_center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#projects h3 {
+    color: $colorOne;
+    text-align: left;
+    margin-left: 0;
+   }
+
+#project_boxes a{
+    text-decoration: none;
+}
+
+
+#project_boxes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+
+.project_box {
+    width: 260px;
+    height: 370px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 300ms;
+   }
+
+.project_box:hover {
+    transform : translateY(-20px)
+   }
+
+#optagony {
+    background-image: url("../contenu/projets/projet_optagony.png");
+    background-size: cover;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
+   }
+
+#room_escape_maker {
+    background-image: url("../contenu/projets/projet_room-escape.png");
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
+   }
+
+#game_mastering {
+    background-image: url("../contenu/projets/projet_GM_projet_GM.png");
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
+   }
+
+#project_last_box {
+    margin-right: 0;
+   }
+
+
+
+.title {
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   }
+
+.title h4 {      
+    color: black;
+    width: 270px;
+
+   }

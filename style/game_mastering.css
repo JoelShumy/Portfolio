@@ -1,0 +1,536 @@
+@font-face {
+	font-family: 'AlegreyaSans-Regular';
+	src: url('font/AlegreyaSans-Regular.otf');
+	font-family: 'Asap-Regular';
+	src: url('font/Asap-Regular.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Asap-Regular', Arial, Helvetica, sans-serif ;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+header {
+    background-color: #172534;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+#header_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#return {
+    height: 45px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#return img {
+    margin: 0;
+}
+
+#return p{
+    width: 100%;
+    color: #1bbc9b;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 5px;
+}
+
+#logo_header {
+    height: 90px;
+    width: 140px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    background-image: url("../contenu/BG/bg_jsk_tape.png");
+    background-repeat: repeat;
+    width: 100%;
+    box-shadow: 0px 3px 9px 2px rgba(0,0,0,0.18);
+}
+
+.cyan {
+    color: #1bbc9b;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header p {
+    margin: 0;
+    margin-left: 100px;
+}
+
+#nav_header p {
+    background-color: white;
+    height: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_header span {
+    margin-left: 7px;
+}
+
+/* ---------------- BODY ------------------*/
+body {
+    background-color: white;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+span {
+    color: #E64C66;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* ---------------- INTRODUCTION ------------------*/
+
+#introduction {
+    padding-top: 110px;
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: #E64C66;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.intro_background {
+    width: 35%;
+    background-image: url("../contenu/GM/fiches-perso.png");
+    background-size:1080px 1190px;
+    background-repeat: no-repeat;
+}
+
+.intro_left {
+    background-position-y: 50%;
+    background-position-x: 100%;
+}
+
+.intro_right {
+   background-position-y: 50%;
+   background-position-x: 0%;
+}
+
+
+
+#intro_content {
+    width: 60%;
+    max-width: 550px;
+    min-width: 400px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* ---------------- CENTRAL_CONTENT------------------*/
+
+.central_content {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+}
+
+/* ---------------- QUALITIES------------------*/
+
+#qualities {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-image: url("../contenu/BG/bg_papier.jpg");
+    background-repeat: repeat;
+    z-index: 2;
+
+}
+
+#qualities_central {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+}
+
+#qualities_central img {
+    width: 100%;
+    margin: 100px 5%;
+    height: fit-content;
+    max-width: 400px;
+}
+
+#qualities_text {
+    width: 40%;
+}
+
+/* ---------------- KEY NUMBERS ------------------*/
+
+#key_numbers {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 9px 2px rgba(0,0,0,0.18);
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+
+.key_numbers_content {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+}
+
+.key_numbers_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.key_numbers_text p {
+    width: 90%;
+}
+
+.key_numbers_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+}
+
+.key_numbers_images img {
+
+    height: auto;
+}
+
+.img--half_width {
+    width: 49%;
+}
+
+.img--full_width {
+    width: 100%;
+}
+
+.images--center {
+    display: flex;
+    justify-content: center;
+}
+
+#key_numbers_central {
+    padding: 25px 0;
+}
+
+/* ---------------- GALLERY ------------------*/
+#galerie {
+    height: auto;
+    background-image: url("../contenu/BG/fond-galerie.jpg");
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#galerie_central {
+    padding: 50px 0; 
+    width: 90%;
+}
+
+#galerie_central img {
+    width: 100%;
+    max-width: 1100px;
+    margin: 13px 0;
+}
+
+iframe {
+    width:100%;
+    max-width: 1100px;
+    height: 600px;
+}
+
+/* ---------------- LINKS ------------------*/
+
+#links {
+    width: 100%;
+    height: 110px;
+}
+
+#links a {
+    text-decoration: none;
+    display: flex;
+}
+
+#projects_links {
+    width: 100%;
+    height: 110px;
+    background-image: url("../contenu/BG/bg_jsk_tape.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#back_next {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+#projects_links a{
+    display: block;
+    width: 140px;
+}
+
+#projects_links .central_content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links_boutons {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #1bbc9b;
+    cursor: pointer;
+}
+
+.links_boutons h3 {
+    width: 80%;
+    margin: 0 15px;
+}
+
+.links--bouton {
+    font-size: 1.2em;
+}
+
+.links_boutons img {
+    height: 100%;
+}
+
+#bouton_precedent {
+width: 20%;
+height: 60px;
+}
+
+#bouton_suivant {
+width: 20%;
+height: 60px;
+display: flex;
+justify-content: flex-end;
+margin-left: 10px;
+}
+
+#link_next {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#link_next img {
+    margin: 0;
+}
+
+#link_next h3 {
+    text-align: end;
+}
+
+#go_up_feature {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    }
+
+#up_button {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.3);
+    }
+
+    /* ------------------------------------------------------ FOOTER */
+
+footer {
+    height: 80px;
+    width: 100%;
+}
+
+#top_footer {
+    height: 60px;
+    background-color: #172534;
+}
+
+#top_footer a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+#bottom_footer {
+    height: 20px;
+    background-color: #1bbc9b;
+}
+
+@media all and (max-width: 1050px) /*--------------------------------------- Règles CSS media querie */
+{
+
+    h2 {
+        font-size: 2.3em;
+    }
+
+    #intro_content {
+        width: 90%;
+    }
+
+    .intro_background {
+        display: none;
+    }
+
+    #qualities_central {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #qualities_text {
+        width: 90%;
+    }
+
+    #qualities_central img {
+        margin: 25px 0;
+        width: 90%;
+    }
+
+    #key_numbers_central {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .key_numbers_intro p {
+        width: 90%;
+    }
+
+    .key_numbers_text {
+        width: 90%;
+    }
+
+    .key_numbers_content {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .key_numbers_images {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        height: 350px;
+    }
+    
+
+}
+
+@media all and (max-width: 625px) /*--------------------------------------- Règles CSS media querie */
+{
+    body {
+        width: auto;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    #nav_header {
+        justify-content: center;
+    }
+
+    header p {
+        margin: 0;
+    }
+
+    #logo_header {
+        margin-left: 5%;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    #intro_content {
+        min-width: 0;
+    }
+    
+}
+
+@media all and (max-device-width: 480px) {
+
+    iframe {
+        height: 200px;
+    }
+
+}

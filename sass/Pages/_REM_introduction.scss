@@ -1,0 +1,55 @@
+.yellow {
+    background-color: $REM_color_primary;
+}
+
+#introduction {
+    margin-top: 120px;
+    height: 700px;
+    width: 100%;
+}
+
+
+#central_intro {
+    display: flex;
+    flex-direction: row;
+}
+
+#bloc_intro {
+    width: 40%;
+    height: 400px;
+}
+
+#logo_intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#text_intro {
+    margin: 0;
+    width: 400px;
+}
+
+#text_intro a {
+    width: 100%;
+
+}
+
+#text_intro p {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#image_intro {
+    width: 60%;
+    height: 600px;
+}
+
+#image_intro img {
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}

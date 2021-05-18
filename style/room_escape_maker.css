@@ -1,0 +1,686 @@
+@font-face {
+	font-family: 'AlegreyaSans-Regular';
+	src: url('font/AlegreyaSans-Regular.otf');
+	font-family: 'Asap-Regular';
+	src: url('font/Asap-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Asap-Regular', Arial, Helvetica, sans-serif ;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+/* ------------------------------------- TEXTE ---------------------*/
+
+h2 {
+    font-size: 4rem;
+    margin: 25px 0px;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+#interface h2 {
+    width: 100%;
+}
+
+a:visited {
+    display: none;
+}
+
+
+/* ------------------------------------- COLOR ---------------------*/
+
+.yellow {
+    background-color: #ffe736;
+}
+
+/* ------------------------------------- HEADER ---------------------*/
+
+header {
+    background-color: #172534;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+#header_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#return {
+    height: 45px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#return img {
+    margin: 0;
+
+}
+
+#return p{
+    width: 100px;
+    color: #1bbc9b;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 5px;
+}
+
+#logo_header {
+    height: 90px;
+    width: 140px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    background-image: url("../contenu/BG/bg_jsk_tape.png");
+    background-repeat: repeat;
+    width: 100%;
+    box-shadow: 0px 3px 9px 2px rgba(0,0,0,0.18);
+}
+
+#nav_header span {
+    margin-left: 7px;
+}
+
+.cyan {
+    color: #1bbc9b;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header p {
+    margin: 0;
+    margin-left: 100px;
+}
+
+/* ---------------- content -------------------------------*/
+
+.central_content {
+    width: 1110px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#under_description {
+    width: 100%;
+    height: 60px;
+    background-color: #1bbc9b;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------- section INTRODUCTION -------------------------------*/
+
+#introduction {
+    margin-top: 120px;
+    height: 700px;
+    width: 100%;
+}
+
+
+#central_intro {
+    display: flex;
+    flex-direction: row;
+}
+
+#bloc_intro {
+    width: 40%;
+    height: 400px;
+}
+
+#logo_intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#text_intro {
+    margin: 0;
+    width: 400px;
+}
+
+#text_intro a {
+    width: 100%;
+
+}
+
+#text_intro p {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#image_intro {
+    width: 60%;
+    height: 600px;
+}
+
+#image_intro img {
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+/* ---------------- section INTERFACE -------------------------------*/
+
+#interface {
+    width: 100%;
+    height: auto;
+}
+
+#interface_top {
+    height: 800px;
+    display: flex;
+}
+
+#interface_bottom {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+
+#interface_top img{
+    width: 100%;
+    position: relative;
+}
+
+.inactive {
+    display: none;
+}
+
+.interface_boutons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.bouton {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: bisque;
+    border: 1px solid grey;
+    z-index: 1;
+    margin: 0 5px;
+}
+
+
+#gauche::before {
+    content:"";
+    background-color: #1bbc9b;
+    border: 1px solid black;
+    transition: opacity 300ms;
+    position: absolute;
+    margin: -1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#droite::before {
+    content:"";
+    background-color: #1bbc9b;
+    border: 1px solid black;
+    transition: opacity 300ms;
+    position: absolute;
+    margin: -1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* https://developer.mozilla.org/fr/docs/Web/API/ChildNode/before#compatibilit%C3%A9_des_navigateurs */
+
+
+
+
+
+
+/* ---------------- section DESCRIPTION -------------------------------*/
+
+#description_screen {
+    height: 740px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 9px 2px rgba(0,0,0,0.18);
+    z-index: 1;
+}
+
+#description_text_image {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text_description {
+    width: 550px;
+    margin-right: 120px;
+    padding-top: 100px;
+}
+
+#text_description p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+span {
+    color: #1bbc9b;
+    font-weight: bold;
+}
+
+#description_text_image img {
+    margin: 0;
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+}
+
+#description_screen h2{
+    text-align: left;
+    width: 100%;
+}
+
+#gallery {
+    height: auto;
+    width: 100%;
+    background-image: url("../contenu/BG/fond-galerie.jpg");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.margin_bottom {
+    padding-bottom: 30px;
+}
+
+.margin_bottom a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------ IMAGES */
+
+.gallery_image {
+    height: auto;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.gallery_image img{
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------ MOBILE IMAGES */
+
+#instagram_mobile {
+    display: none;
+}
+
+#dog_mobile {
+    display: none;
+}
+
+#dog_food_mobile {
+    display: none;
+}
+
+/* --------------------------------------- PREVIOUS & NEXT */
+
+#links {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#links a {
+    text-decoration: none;
+    display: flex;
+}
+
+#projects_links {
+    width: 100%;
+    background-image: url("../contenu/BG/bg_jsk_tape.png");
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects_links a{
+    width: 100%;
+
+}
+
+#projects_links_central {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projects_links_central a {
+    width: 50%;
+}
+
+/*------------------------------ BOUTONS-------------------*/
+
+#go_up_feature {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    }
+
+#up_button {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.3);
+    }
+
+.links_boutons {
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #1bbc9b;
+    cursor: pointer;
+}
+
+.links_boutons h3 {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.links_boutons img {
+    width: 100%;
+}
+
+#bouton_precedent {
+height: 60px;
+display: flex;
+justify-content: flex-start;
+}
+
+#bouton_suivant {
+height: 60px;
+display: flex;
+justify-content: flex-end;
+}
+
+#link_next {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#link_next h3 {
+    text-align: end;
+    padding-right: 20px;
+    margin-left: 0px;
+}
+
+/* --------------------------------------- FOOTER */
+
+footer {
+    height: 80px;
+    width: 100%;
+}
+
+#top_footer {
+    height: 60px;
+    background-color: #172534;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom_footer {
+    height: 20px;
+    background-color: #1bbc9b;
+}
+
+#top_footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media all and (max-width: 1150px) /*--------------------------------------- Règles CSS media querie */
+{
+
+    body {
+        width: 100vw;
+        min-width: 480px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #description_screen h2 {
+        text-align: center;
+    }
+
+    #nav_header {
+        justify-content: center;
+    }
+
+    #nav_header p {
+        background-color: white;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+    }
+
+    header p {
+        margin: 0;
+    }
+
+    .central_content {
+        width: 100%;
+    }
+
+
+    #introduction {
+        height: auto;
+    }
+
+    #bloc_intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo_intro {
+        margin-top: 30px;
+    }
+
+    #logo_intro img {
+        width: 250px;
+    }
+
+    #text_intro {
+        margin: 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    #image_intro {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #image_intro  img{
+        width: auto;
+        min-width: 250px;
+    }
+
+    #central_intro {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #interface {
+        margin-bottom: 50px;
+    }
+
+    #interface_top {
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #interface_bottom {
+        display: none;
+    }
+    
+    #interface_top img{
+        width: 100%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .large_screen {
+        display: none;
+    }
+
+    .inactive {
+        display: none;
+    }   
+
+    #description_screen {
+        height: auto;
+    }
+
+    #description_text_image {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #description_text_image img {
+        border-radius: 10px;
+        width: auto;
+        height: 400px;
+    }
+    
+    #text_description {
+        width: 90%;
+        min-width: 290px;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    #links p{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    #projects_links a{
+        margin: 0;
+    }
+
+    #links_boutons img{
+        width: 100%;
+    }
+}
+
+@media all and (max-device-width: 625px) /*--------------------------------------- Règles CSS media querie */
+{
+
+    
+
+    body {
+        width: auto;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #logo_header {
+        margin-left: 5%;
+    }
+}

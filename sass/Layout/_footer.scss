@@ -1,0 +1,23 @@
+    /* ------------------------------- FOOTER */ 
+
+    footer {
+        height: 80px;
+        width: 100%;
+    }
+
+    #top_footer {
+        height: 60px;
+        background-color: $colorOne;
+        display: flex;
+        justify-content: center;
+    }
+
+    #top_footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #bottom_footer {
+        height: 20px;
+        background-color: #1bbc9b;
+    }

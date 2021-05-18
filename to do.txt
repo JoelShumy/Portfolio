@@ -1,0 +1,66 @@
+GM certificat d'exellence trip advisor.
+Effet paralax texte.
+Demander à flo les images de la page GM
+
+
+
+Actualiser CV
+
+Apprendre à faire une visionneuse.
+
+
+
+DONE--------------------------------------------
+
+
+Calculatrice fonctionnelle.
+Assurer un changement de largeur fixe des box en fonction des media queries. Pour faire des changements de style css controlés.
+Background carte qui change de taille. 
+Gérer la largeur des logo pour éviter les supêrpositions dû au wrap.
+Distance entre les box skill
+Logo pétés en pleine page. 
+Version mobile sur 1 colonne. 
+Version Tablette. 
+Marge à éliminer / Respecter les cotes et les largeurs.
+Format tablette, cv et gmail mm largeur, centrer sur la page. 
+Bandeau des ancres (nav header) à ajouter. 
+Menu qui reste version tablette et qui disparait uniquement sur mobile. 
+Intégrer maquette optagony
+Intégrer la page optagony en responsive.
+Bouton retour pages projets.
+Se renseigner sur les mentions légales.
+Demander à flo les IMG en png transparent 
+Page mentions légales 
+Page index : réduire hauteur du nav en responsive.
+Index. Text bouton, un peu plus petit, pas en bold. 
+Changer images des flèches
+Mettre "projet suivant" sur deux lignes. 
+Augmenter légèrement les espaces entre flêche et texte. 
+Boutons suivant et précédent, curseur.
+Coller bandeau en bas.
+Optagony, effet parallax fond fiches joueurs.
+Image logo etudes couleur, mm largeur que NB.
+Intégrer maquette room escape maker.
+Menu hamburger. 
+Intégrer la page room escape maker en responsive.
+Optagony Responsive
+Liens des logo study et career.
+Réserver un nom de domaine, choisir un hébergeur
+Mettre le site en ligne.
+Réécrire proprement le code javascript pour le menu burger. (diminuer les lignes de code).
+Ajouer les alt sur les images. 
+télécharger cv.
+- "Gallerie" > "Galerie"
+Sur la page de Mentions légales est affiché : "Projets > Optagony" comme section du site
+- Toujours sur la page Mentions légales il est affiché : "Document" comme nom de site sur l'onglet
+- Téléchargement de CV faile
+- pour les boutons mailto et CV j'aurais mis le logo cliquable aussi car je pensais que ça ne fonctionnait pas au début (avis perso)
+- refaire style des boutons
+- le mailto n'a pas l'air de fonctionner (je sais pas si c'est mon navigateur)
+Mentions Légales Optagony
+Dezoom mobile index 
+Dezoom mobile optagony 
+Dezoom mobile mentions légales
+Dezoom mobile rem 
+header identique d'une page à l'autre. ok ? 
+Bouton wordpress => bouton gm
