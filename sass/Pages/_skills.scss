@@ -40,6 +40,10 @@
     margin-bottom: 150px;
 }
 
+$num-box: 4;
+$anim-dur: 0.3s;
+$anim-delay: 0.1s; 
+
 .box {
     height: 360px;
     width: 270px;
@@ -50,6 +54,32 @@
     align-items: center;
     z-index: 1;
     box-shadow: 8px 5px 15px 0px #7A7A7A;
+    opacity: 0;
+    transform: translateY(0) ease-out;
+    animation: apparition $anim-dur linear forwards;
+
+    @for $i from 1 through $num-box {
+      &--#{$i} {
+          animation-delay: $anim-delay * $i;
+      } 
+    }
+}
+
+// .apparition {
+//   animation: apparition 0.3s linear forwards 0.4s;
+// }
+
+
+@keyframes apparition {
+
+  from {
+    opacity: 0;
+    transform: translateY(-30px);  
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
 
 }
 

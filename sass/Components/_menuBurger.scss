@@ -4,30 +4,31 @@
     height: 45px;
     width: 45px;
     position: absolute;
-    left: 80%;
-    
-}
-
-.close {
-    z-index: 5;
-    opacity: 1;
+    right: 10.5%;
+    border: solid 1px red;
 }
 
 .open_button {
     height: 45px;
     width: 45px;
-    margin-right: 75px;
-    opacity: 1;
-    
 }
 
 #bouton_menu_burger {
     display: none;
-    width: auto;
-    height: auto;
-    margin: 0;
     padding: 0;
+    margin-right: 10%;
+    @media all and (max-device-width: 768px){
+        display:block;
+    }
 }
+
+// #bouton_menu_burger img {
+//     width: 45px;
+//     height: 45px;
+//     margin-right: 100px;
+//     border: solid green 2px
+// }
+
 
  .burger_menu {
     width: 100%;
@@ -99,10 +100,9 @@
 
  #skill_burger_menu {
      background-color: $colorFive;
-     
  }
 
- #skill_burger_menu p {
+ #skill_burger_menu p, #career_burger_menu p, #project_burger_menu p, #contact_burger_menu p {
     color: white;
  }
 
@@ -110,22 +110,10 @@
     background-color: $colorFour;
  }
 
- #career_burger_menu p {
-    color: white;
- }
-
  #project_burger_menu {
     background-color: $colorTwo;
  }
 
- #project_burger_menu p {
-    color: white;
- }
-
  #contact_burger_menu {
     background-color: $colorThree;
- }
-
- #contact_burger_menu p {
-    color: white;
  }

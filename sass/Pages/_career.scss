@@ -31,6 +31,16 @@
     width: 100%;
 }
 
+.career_container {
+  display: flex;
+ flex-direction: column;
+}
+
+.career_container__content {
+  display: flex;
+}
+
+
 #career_logo {
   width : 59%;
   display: flex;

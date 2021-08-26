@@ -1,4 +1,5 @@
-@import "./utils/variables";
+@import "./Utils/variables";
+@import "./Utils/animations";
 @import "./Base/base";
 @import "./Base/typographie";
 @import "./Components/btn";
@@ -465,9 +466,7 @@
         display: none;
     }
 
-     #bouton_menu_burger {
-        display:block;
-    }
+
     
 .burger_menu_background {
     animation: pop 300ms ease-in-out;

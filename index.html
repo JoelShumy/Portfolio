@@ -18,7 +18,7 @@
 
                 <div id="header__logo">
                     
-                    <a href="index.html"><img src="contenu/logos/logo_JSK_entête.png" alt="un logo en trois lettres JSK"></a>
+                    <a href="index.html"><img src="contenu/logos/logo_JSK_entête.png" alt="un logo en trois lettres JSK" class="header__logo--initials"></a>
                 
                     <img src="contenu/boutons/bt_close_mobile.png" alt="un bouton pour fermer le menu" class="close_button inactive">                   
                     
@@ -105,7 +105,7 @@
 
                         <div id="skill_boxes">
     
-                            <div class="box">
+                            <div class="box box--1">
     
                                 <div class="box_title" id="developpement_web">
     
@@ -131,7 +131,7 @@
                                 
                             </div>
     
-                            <div class="box">
+                            <div class="box box--2">
     
                                 <div class="box_title" id="community_management">
     
@@ -157,7 +157,7 @@
     
                             </div>
     
-                            <div class="box" id="game_design">
+                            <div class="box box--3" id="game_design">
     
                                 <div class="box_title" id="game_design">
     
@@ -181,7 +181,7 @@
     
                             </div>
     
-                            <div class="box" id="last_box">
+                            <div class="box box--4" id="last_box">
     
                                 <div class="box_title" id="creation_contenu">
     
@@ -210,48 +210,56 @@
     
                     </div>
 
-                    <h3 class="h3_index" id="career_anchor">PARCOURS</h3>
+                    <div class="career_container">
 
-                    <div id="career_pitch">
-                            
-                        <p> Diplomé en 2014 d'un Master de <span>Réalisateur Numérique</span> à <strong>l'IIM</strong>, j'ai travaillé comme <span>Community Manager</span> au sein de plusieurs marques comme <strong>Millenium, Webedia, Jeuxvideo.com, Melty ou encore Coca-Cola.</strong></p>
-                        
-                        <p>Passionné par l'univers des jeux ludiques, j'ai passé trois ans au sein de <strong>One Hour</strong> en tant que Game Master.</p>
+                        <h3 class="h3_index reveal" id="career_anchor">PARCOURS</h3>
 
-                        <p>Aujourd'hui j'ai décidé de reprendre une formation en <span>Développement Web et Front-End</span> pour acquérir des compétences prisées.</p>
+                        <div class="career_container__content reveal">
 
-                    </div>
-
-                    <div id="career_logo">
-
-                        <div id="logo_study">
-
-                            <a href="https://www.iim.fr" target="_blank"><div id="logo_IIM"><img src="contenu/logos/logo_IIM_BW.png" alt="Logo en noir et blanc de l'institut de l'internet et du multimédia. Trois lettres : IIM"></div></a>
-
-                            <a href="https://openclassrooms.com" target="_blank"><div id="logo_open_class_room"><img src="contenu/logos/logo_openclassroom_BW.png" alt="Logo en noir et blanc d'Openclassrooms. La lettre C inversée horizontalement"></div></a>
-
-                        </div>
-
-                        <div id="logo_brands">
-
-                            <a href="https://www.jeuxvideo.com/" target="_blank"><div id="logo_jvc"><img src="contenu/logos/logo_JVC_BW.png" alt="Logo en noir et blanc de Jeuxvideo.com"></div></a>
-
-                            <div id="square_logo">
-
-                                <a href="https://fr.millenium.gg" target="_blank"><div id="logo_millenium"><img src="contenu/logos/logo_millenium_BW.png" alt="Logo en noir et blanc de MilleniumGG"></div></a>
-
-                                <a href="https://www.jeuxvideo.com/gaming-stories/" target="_blank"><div id="logo_coca"><img src="contenu/logos/logo_Coca_BW.png" alt="Logo en noir et blanc de Coca-Cola"></div></a>
+                            <div id="career_pitch">
+                                    
+                                <p> Diplomé en 2014 d'un Master de <span>Réalisateur Numérique</span> à <strong>l'IIM</strong>, j'ai travaillé comme <span>Community Manager</span> au sein de plusieurs marques comme <strong>Millenium, Webedia, Jeuxvideo.com, Melty ou encore Coca-Cola.</strong></p>
                                 
-                                <a href="https://www.melty.fr/" target="_blank"><div id="logo_melty"><img src="contenu/logos/logo_melty_BW.png" alt="Logo en noir et blanc de Melty"></div></a>
+                                <p>Passionné par l'univers des jeux ludiques, j'ai passé trois ans au sein de <strong>One Hour</strong> en tant que Game Master.</p>
 
-                                <a href="https://www.one-hour.fr" target="_blank"><div id="logo_one_hour"><img src="contenu/logos/logo_1H_BW.png" alt="Logo en noir et blanc de One Hour"></div></a>
-
-                                <div id="pixel_anchor_projects"></div>
+                                <p>Aujourd'hui j'ai décidé de reprendre une formation en <span>Développement Web et Front-End</span> pour acquérir des compétences prisées.</p>
 
                             </div>
 
+                            <div id="career_logo">
+
+                            <div id="logo_study">
+
+                                <a href="https://www.iim.fr" target="_blank"><div id="logo_IIM"><img src="contenu/logos/logo_IIM_BW.png" alt="Logo en noir et blanc de l'institut de l'internet et du multimédia. Trois lettres : IIM"></div></a>
+
+                                <a href="https://openclassrooms.com" target="_blank"><div id="logo_open_class_room"><img src="contenu/logos/logo_openclassroom_BW.png" alt="Logo en noir et blanc d'Openclassrooms. La lettre C inversée horizontalement"></div></a>
+
+                            </div>
+
+                            <div id="logo_brands">
+
+                                <a href="https://www.jeuxvideo.com/" target="_blank"><div id="logo_jvc"><img src="contenu/logos/logo_JVC_BW.png" alt="Logo en noir et blanc de Jeuxvideo.com"></div></a>
+
+                                <div id="square_logo">
+
+                                    <a href="https://fr.millenium.gg" target="_blank"><div id="logo_millenium"><img src="contenu/logos/logo_millenium_BW.png" alt="Logo en noir et blanc de MilleniumGG"></div></a>
+
+                                    <a href="https://www.jeuxvideo.com/gaming-stories/" target="_blank"><div id="logo_coca"><img src="contenu/logos/logo_Coca_BW.png" alt="Logo en noir et blanc de Coca-Cola"></div></a>
+                                    
+                                    <a href="https://www.melty.fr/" target="_blank"><div id="logo_melty"><img src="contenu/logos/logo_melty_BW.png" alt="Logo en noir et blanc de Melty"></div></a>
+
+                                    <a href="https://www.one-hour.fr" target="_blank"><div id="logo_one_hour"><img src="contenu/logos/logo_1H_BW.png" alt="Logo en noir et blanc de One Hour"></div></a>
+
+                                    <div id="pixel_anchor_projects"></div>
+
+                                </div>
+
+                            </div>
+                            
+                            </div>
+
                         </div>
-                        
+
                     </div>
 
                 </div>

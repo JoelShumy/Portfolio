@@ -1,11 +1,28 @@
 {
   "name": "new-portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style/style.css --style compressed"
+    "sass": "sass --watch ./sass/main.scss:./style/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.38.0"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelShumy/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoelShumy/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JoelShumy/Portfolio#readme",
+  "description": ""
 }
