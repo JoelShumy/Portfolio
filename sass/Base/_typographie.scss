@@ -19,6 +19,9 @@
     font-weight: bolder;
     margin-left: 0;
     width: 100%;
+    @media (max-width: 768px) {
+        margin: 0;
+    }
 }
 
 .h4_index {

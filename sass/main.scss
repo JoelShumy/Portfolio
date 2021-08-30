@@ -6,11 +6,11 @@
 @import "./Components/menuBurger";
 @import "./Layout/header";
 @import "./Layout/footer";
-@import "./Pages/intro";
-@import "./Pages/skills";
-@import "./Pages/career";
-@import "./Pages/projects";
-@import "./Pages/contact";
+@import "./Pages/A_intro";
+@import "./Pages/A_skills";
+@import "./Pages/A_career";
+@import "./Pages/A_projects";
+@import "./Pages/A_contact";
 
  /* ------------------------------- SKILLS */ 
 * {
@@ -69,7 +69,6 @@
     .content_center {
         width: 700px;
         margin: auto;
-        height: 100%;
     }
 
     #skill_boxes {
@@ -190,7 +189,7 @@
         margin: 0px;
     }
 
-    h3, #projects h3, #skills h3, #contact h3 {
+    h3, #projects h3, .skills h3, #contact h3 {
         margin: 0 5%;
         font-size: 4rem;
         width: 90%;
@@ -210,14 +209,7 @@
         width: 100%;
     }
 
-    #intro {
-        padding-left: 15px;
-        width: 90%;
-    }
 
-    #skill_head {
-        width: 100%;
-    }
 
     .content_center {
         width: 100%;
@@ -315,7 +307,7 @@
         min-width: 300px;
     }
 
-    h3, #projects h3, #skills h3, #contact h3, #career h3 {
+    h3, #projects h3, .skills h3, #contact h3, #career h3 {
         font-size: 2.5em;
     }
 

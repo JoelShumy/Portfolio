@@ -1,14 +1,56 @@
-.reveal {
+.reveal [class*=reveal-] {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(30px);
 }
 
-.reveal-visible {
+[class*=reveal-] {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0px);
   transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
+.reveal-2 {
+  transition-delay: 0.3s;
+}
+
+.reveal-3 {
+  transition-delay: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal [class*=reveal-] {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.box {
+  opacity: 0;
+  transform: ease-out;
+  animation: apparition 0.3s linear forwards;
+}
+.box--1 {
+  animation-delay: 0.1s;
+}
+.box--2 {
+  animation-delay: 0.2s;
+}
+.box--3 {
+  animation-delay: 0.3s;
+}
+.box--4 {
+  animation-delay: 0.4s;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 html {
   scroll-padding-top: 150px;
   scroll-behavior: smooth;
@@ -43,6 +85,11 @@ body {
   font-weight: bolder;
   margin-left: 0;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .h3_index {
+    margin: 0;
+  }
 }
 
 .h4_index {
@@ -155,7 +202,6 @@ a {
   width: 45px;
   position: absolute;
   right: 10.5%;
-  border: solid 1px red;
 }
 
 .open_button {
@@ -208,11 +254,9 @@ a {
   height: 480px;
   width: 95%;
   background-color: white;
-  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: absolute;
   position: fixed;
   left: 5%;
   top: 91px;
@@ -265,6 +309,9 @@ header {
   background-color: #172534;
   height: 150px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -275,23 +322,15 @@ header {
   }
 }
 
-.header__content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-#header__logo {
-  height: 90px;
+.header__top {
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__logo--initials {
+.header__top--initials {
   margin-left: 70px;
   height: 90px;
   width: 140px;
@@ -401,7 +440,7 @@ footer {
   margin-top: 110px;
 }
 
-#skills {
+.skills {
   height: 640px;
   background-image: url("../contenu/BG/fond_entete.jpg");
   background-repeat: no-repeat;
@@ -415,16 +454,27 @@ footer {
   z-index: 1;
 }
 
-#skills_center {
-  height: 640px;
-}
-
 #skill_head {
   height: 360px;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: -140px;
+}
+
+#skills__intro {
+  width: 100%;
+  margin-top: 50px;
+  border: solid 1px red;
+}
+@media all and (max-width: 425px) {
+  #skills__intro {
+    text-align: center;
+  }
+}
+
+#skill_head {
+  width: 100%;
 }
 
 #skill_center h3 {
@@ -452,33 +502,8 @@ footer {
   align-items: center;
   z-index: 1;
   box-shadow: 8px 5px 15px 0px #7A7A7A;
-  opacity: 0;
-  transform: translateY(0) ease-out;
-  animation: apparition 0.3s linear forwards;
-}
-.box--1 {
-  animation-delay: 0.1s;
-}
-.box--2 {
-  animation-delay: 0.2s;
-}
-.box--3 {
-  animation-delay: 0.3s;
-}
-.box--4 {
-  animation-delay: 0.4s;
 }
 
-@keyframes apparition {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 #last_box {
   margin-right: 0;
 }
@@ -868,7 +893,6 @@ footer {
   .content_center {
     width: 700px;
     margin: auto;
-    height: 100%;
   }
 
   #skill_boxes {
@@ -983,7 +1007,7 @@ footer {
     margin: 0px;
   }
 
-  h3, #projects h3, #skills h3, #contact h3 {
+  h3, #projects h3, .skills h3, #contact h3 {
     margin: 0 5%;
     font-size: 4rem;
     width: 90%;
@@ -1000,15 +1024,6 @@ footer {
   }
 
   #skill_center, #contact_center, #project_center, #career_center {
-    width: 100%;
-  }
-
-  #intro {
-    padding-left: 15px;
-    width: 90%;
-  }
-
-  #skill_head {
     width: 100%;
   }
 
@@ -1102,7 +1117,7 @@ footer {
     min-width: 300px;
   }
 
-  h3, #projects h3, #skills h3, #contact h3, #career h3 {
+  h3, #projects h3, .skills h3, #contact h3, #career h3 {
     font-size: 2.5em;
   }
 

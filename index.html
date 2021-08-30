@@ -13,75 +13,47 @@
   <body>
 
         <header>
-            
-            <div class="header__content">
-
-                <div id="header__logo">
-                    
-                    <a href="index.html"><img src="contenu/logos/logo_JSK_entête.png" alt="un logo en trois lettres JSK" class="header__logo--initials"></a>
-                
-                    <img src="contenu/boutons/bt_close_mobile.png" alt="un bouton pour fermer le menu" class="close_button inactive">                   
-                    
+                <div class="header__top">
+                    <a href="index.html"><img src="contenu/logos/logo_JSK_entête.png" alt="un logo en trois lettres JSK" class="header__top--initials"></a>
+                    <img src="contenu/boutons/bt_close_mobile.png" alt="un bouton pour fermer le menu" class="close_button inactive">      <!-- bouton fermer menu_burger -->            
                     <div id="bouton_menu_burger"><img src="contenu/boutons/bt_burger.png" alt="un bouton pour afficher le menu" class="open_button"></div>
-                    
-                
                 </div>
-
                 <div class="header__nav">
-
                     <ul>
-
                         <a href="#skills_anchor"><li class="nav__button">Compétences</li></a>
-
                         <a href="#career_anchor"><li class="nav__button">Parcours</li></a>
-
                         <a href="#projects_anchor"><li class="nav__button">Projets</li></a>
-
                         <a href="#contact_anchor"><li class="nav__button button--borderRight">Contact</li></a>
-                        
                     </ul>  
-
                 </div>
-                
-            </div>
-
         </header>
 
         <div class="burger_menu inactive">
-
             <div class="burger_menu_background">
-
             </div>
-
             <div class="burger_menu_buttons">
-
                 <div class="burger_button" id="skill_burger_menu">
-                    <img src="contenu/boutons/bt_competences.png" alt="Pictogramme de trois règles de mesure formant un Z"><a href="#logo_intro"><p>Compétences</p></a>
+                    <img src="contenu/boutons/bt_competences.png" alt="Pictogramme de trois règles de mesure formant un Z"><a href="#intro__logo"><p>Compétences</p></a>
                 </div>
-
                 <div class="burger_button" id="career_burger_menu">
                     <img src="contenu/boutons/bt_parcours-mobile.png" alt="Pictogramme d'un panneau d'indication"><a href="#pixel_anchor_career"><p>Parcours</p></a>
                 </div>
-
                 <div class="burger_button" id="project_burger_menu">
                     <img src="contenu/boutons/bt_projets_mobile.png" alt="Pictogramme d'une scie"><a href="#pixel_anchor_projects"><p>Projets</p></a>
                 </div>
-
                 <div class="burger_button" id="contact_burger_menu">
                     <img src="contenu/boutons/bt_contact.png" alt="Pictogramme d'un avion en papier"><a href="#contact"><p>Contact</p></a>
                 </div>
-
             </div>
-
         </div>
 
-        <div id="skills">
+        <div class="skills">
 
-            <div class="content_center" id="skills_center">
+             <div class="content_center"> <!-- skills_center id="skills_center"> -->
 
-                <div id="intro">
+                <div id="skills__intro">
 
-                    <div id="logo_intro"><img src="contenu/logos/logo_JSK_intro.png" alt="un logo en trois lettres JSK"></div>
+                    <div id="intro__logo"><img src="contenu/logos/logo_JSK_intro.png" alt="un logo en trois lettres JSK"></div>
 
                     <h1 class="h1_index">JOËL SHUM-KWOONG</h1>
 
@@ -210,13 +182,13 @@
     
                     </div>
 
-                    <div class="career_container">
+                    <div class="career_container reveal">
 
-                        <h3 class="h3_index reveal" id="career_anchor">PARCOURS</h3>
+                        <h3 class="h3_index reveal-1" id="career_anchor">PARCOURS</h3>
 
-                        <div class="career_container__content reveal">
+                        <div class="career_container__content">
 
-                            <div id="career_pitch">
+                            <div id="career_pitch" class=" reveal-2">
                                     
                                 <p> Diplomé en 2014 d'un Master de <span>Réalisateur Numérique</span> à <strong>l'IIM</strong>, j'ai travaillé comme <span>Community Manager</span> au sein de plusieurs marques comme <strong>Millenium, Webedia, Jeuxvideo.com, Melty ou encore Coca-Cola.</strong></p>
                                 
@@ -226,35 +198,35 @@
 
                             </div>
 
-                            <div id="career_logo">
+                            <div id="career_logo" class="reveal-3">
 
-                            <div id="logo_study">
+                                <div id="logo_study">
 
-                                <a href="https://www.iim.fr" target="_blank"><div id="logo_IIM"><img src="contenu/logos/logo_IIM_BW.png" alt="Logo en noir et blanc de l'institut de l'internet et du multimédia. Trois lettres : IIM"></div></a>
+                                    <a href="https://www.iim.fr" target="_blank"><div id="logo_IIM"><img src="contenu/logos/logo_IIM_BW.png" alt="Logo en noir et blanc de l'institut de l'internet et du multimédia. Trois lettres : IIM"></div></a>
 
-                                <a href="https://openclassrooms.com" target="_blank"><div id="logo_open_class_room"><img src="contenu/logos/logo_openclassroom_BW.png" alt="Logo en noir et blanc d'Openclassrooms. La lettre C inversée horizontalement"></div></a>
-
-                            </div>
-
-                            <div id="logo_brands">
-
-                                <a href="https://www.jeuxvideo.com/" target="_blank"><div id="logo_jvc"><img src="contenu/logos/logo_JVC_BW.png" alt="Logo en noir et blanc de Jeuxvideo.com"></div></a>
-
-                                <div id="square_logo">
-
-                                    <a href="https://fr.millenium.gg" target="_blank"><div id="logo_millenium"><img src="contenu/logos/logo_millenium_BW.png" alt="Logo en noir et blanc de MilleniumGG"></div></a>
-
-                                    <a href="https://www.jeuxvideo.com/gaming-stories/" target="_blank"><div id="logo_coca"><img src="contenu/logos/logo_Coca_BW.png" alt="Logo en noir et blanc de Coca-Cola"></div></a>
-                                    
-                                    <a href="https://www.melty.fr/" target="_blank"><div id="logo_melty"><img src="contenu/logos/logo_melty_BW.png" alt="Logo en noir et blanc de Melty"></div></a>
-
-                                    <a href="https://www.one-hour.fr" target="_blank"><div id="logo_one_hour"><img src="contenu/logos/logo_1H_BW.png" alt="Logo en noir et blanc de One Hour"></div></a>
-
-                                    <div id="pixel_anchor_projects"></div>
+                                    <a href="https://openclassrooms.com" target="_blank"><div id="logo_open_class_room"><img src="contenu/logos/logo_openclassroom_BW.png" alt="Logo en noir et blanc d'Openclassrooms. La lettre C inversée horizontalement"></div></a>
 
                                 </div>
 
-                            </div>
+                                <div id="logo_brands">
+
+                                    <a href="https://www.jeuxvideo.com/" target="_blank"><div id="logo_jvc"><img src="contenu/logos/logo_JVC_BW.png" alt="Logo en noir et blanc de Jeuxvideo.com"></div></a>
+
+                                    <div id="square_logo">
+
+                                        <a href="https://fr.millenium.gg" target="_blank"><div id="logo_millenium"><img src="contenu/logos/logo_millenium_BW.png" alt="Logo en noir et blanc de MilleniumGG"></div></a>
+
+                                        <a href="https://www.jeuxvideo.com/gaming-stories/" target="_blank"><div id="logo_coca"><img src="contenu/logos/logo_Coca_BW.png" alt="Logo en noir et blanc de Coca-Cola"></div></a>
+                                        
+                                        <a href="https://www.melty.fr/" target="_blank"><div id="logo_melty"><img src="contenu/logos/logo_melty_BW.png" alt="Logo en noir et blanc de Melty"></div></a>
+
+                                        <a href="https://www.one-hour.fr" target="_blank"><div id="logo_one_hour"><img src="contenu/logos/logo_1H_BW.png" alt="Logo en noir et blanc de One Hour"></div></a>
+
+                                        <div id="pixel_anchor_projects"></div>
+
+                                    </div>
+
+                                </div>
                             
                             </div>
 
@@ -270,11 +242,11 @@
 
         <div id="projects">
 
-            <div class="content_center" id="project_center">
+            <div class="content_center reveal" id="project_center">
 
-                <h3 class="h3_index" id="projects_anchor">PROJETS</h3>
+                <h3 class="h3_index reveal-1" id="projects_anchor">PROJETS</h3>
 
-                <div id="project_boxes">
+                <div id="project_boxes" class="reveal-3">
 
                     <div class="project_box" >
 
@@ -321,11 +293,11 @@
 
         <div id="contact">
 
-            <div class="content_center" id="contact_center">
+            <div class="content_center reveal" id="contact_center">
 
-                <h3 class="h3_index" id="contact_anchor">CONTACT</h3>
+                <h3 class="h3_index reveal-1" id="contact_anchor">CONTACT</h3>
 
-                <div id="contact_info">
+                <div id="contact_info" class="reveal-2">
                     
                     <h4 class="h4_index">Joël Shum-Kwoong</h4>
                     <h4 class="h4_index">Développeur Web, Front-End</h4>

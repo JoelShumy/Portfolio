@@ -5,7 +5,6 @@
     width: 45px;
     position: absolute;
     right: 10.5%;
-    border: solid 1px red;
 }
 
 .open_button {
@@ -64,11 +63,9 @@
      height: 480px;
      width: 95%;
      background-color: white;
-     opacity: 1;
      display: flex;
      flex-direction: column;
      align-items: flex-end;
-     position: absolute;
      position: fixed;
      left: 5%;
      top: 91px;

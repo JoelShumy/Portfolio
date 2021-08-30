@@ -1,10 +1,55 @@
-.reveal {
+// Apparition des éléments au scrolling
+
+.reveal [class*="reveal-"] {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(30px);
 }
 
-.reveal-visible {
+[class*="reveal-"]{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
     transition: 1s cubic-bezier(.5, 0, 0, 1 );
 }
+
+
+.reveal-2 {
+    transition-delay: 0.3s;
+}
+
+.reveal-3 {
+    transition-delay: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal [class*="reveal-"] {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+// Apparition des éléments au scrolling
+
+.box {
+    opacity: 0;
+    transform: ease-out;
+    animation: apparition $anim-dur linear forwards;
+
+    @for $i from 1 through $num-box {
+      &--#{$i} {
+          animation-delay: $anim-delay * $i;
+      } 
+    }
+}
+
+@keyframes apparition {
+
+    from {
+      opacity: 0;
+      transform: translateY(30px);  
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px)
+    }
+  
+  }

@@ -2,6 +2,9 @@ header {
     background-color: $colorOne;
     height: 150px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
     position: sticky;
     top: 0;
     z-index: 5;
@@ -10,23 +13,15 @@ header {
     }
 }
 
-.header__content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;      
-}
-
-#header__logo {
-    height: 90px;
+.header__top {
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__logo--initials {
+.header__top--initials {
   margin-left: 70px;
   height: 90px;
   width: 140px;
